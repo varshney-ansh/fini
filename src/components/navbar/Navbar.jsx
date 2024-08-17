@@ -1,6 +1,6 @@
 'use client'
 
-import MiddleMenu from "./middle/middle";
+import MiddleMenu from "./middle/Middle";
 import styles from "./nav.module.css";
 import RightMenu from "./right/Right";
 import Link from "next/link";
