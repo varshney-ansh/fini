@@ -1,0 +1,20 @@
+.menu a{
+    padding: 14px 21px;
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.menu a:hover{
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    color: var(--nav-blue);
+}
+
+@media (max-width: 880px) {
+    .menu{
+        display: none;
+    }
+}

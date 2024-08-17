@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container a{
+    padding: 0px 10px;
+    color: var(--black);
+    text-decoration: underline;
+    font-size: 15px;
+    text-underline-offset: 2px;
+    transition: all 0.3s ease-in-out;
+    text-decoration-thickness: 1px;
+}
+
+.container a:hover{
+    color: var(--nav-blue);
+    text-decoration: none;
+}
+
+@media (max-width: 880px) {
+    .container{
+        display: none;
+    }
+}

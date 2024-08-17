@@ -1,0 +1,80 @@
+.topbar{
+    width: calc(100% - 80px);
+    /* background-color: red; */
+    margin-left: 80px;
+    display: flex;
+    position: fixed;
+    user-select: none;
+    --webkit-user-select: none;
+    align-items: center;
+    right: 40px;
+    justify-content: flex-end;
+}
+
+.topbar svg{
+    width: 24px;
+    height: 24px;
+}
+
+.rightmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rightmenu a:first-child{
+    background-color: var(--white);
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+}
+
+.rightmenu a img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.rightmenu a .pro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightmenu a .pro span{
+    font-size: 12px;
+    line-height: 18px;
+    color: #858585;
+}
+
+.rightmenu a .pro span:first-child{
+    font-size: 14px;
+    font-weight: 600;
+    color: #131313;
+}
+
+.rightmenu a:last-child{
+    background-color: var(--white);
+    padding: 10px;
+    height: 59.6px;
+    width: 59.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.1);
+}
+
+.rightmenu a:hover{
+    background-color: var(--light-bluish);
+}
+
+@media (max-width: 490px) {
+    .topbar{
+        right: 20px;
+    }
+}

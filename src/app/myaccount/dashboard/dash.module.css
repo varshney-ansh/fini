@@ -1,0 +1,13 @@
+.container{
+    height: 100vh;
+    position: relative;
+    padding: 40px 40px;
+    width: 100%;
+    background: var(--light-bg);
+}
+
+@media (max-width: 490px) {
+    .container{
+        padding: 40px 20px;
+    }
+}
