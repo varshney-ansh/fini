@@ -8,7 +8,7 @@ import { useState } from 'react';
 const RegisterPage = () => {
 
     const [openCodeDiaglog, setOpenCodeDialog] = useState(false);
-    const [index, setIndex] = useState(4);
+    const [index, setIndex] = useState(0);
 
     const nextform = (e, index) => {
         e.preventDefault();
