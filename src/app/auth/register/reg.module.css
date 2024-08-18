@@ -10,7 +10,7 @@
     justify-content: center;
     position: relative;
     height: 100%;
-    max-height: 80vh;
+    min-height: 80vh;
 }
 
 .brandLogo svg{
@@ -272,10 +272,6 @@
     text-align: left;
 }
 
-.form input:invalid{
-    border: 0.125rem solid rgb(196, 11, 11);
-}
-
 .form button{
     margin: 40px 0;
     min-width: 288px;
@@ -308,4 +304,50 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.infodialog p{
+    color: var(--text-heading);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.infodialog .inputField{
+    margin: 12px 0px;
+}
+
+.ssninput::placeholder{
+    display: none;
+}
+
+.snninput:focus ~ ::placeholder{
+    display: block;
+}
+
+.backbtn{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 48px;
+    border: 0.1875rem solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+}
+
+.backbtn:hover{
+    background: rgb(250, 248, 245);
+}
+
+.backbtn:focus{
+    border: 0.1875rem solid rgb(0, 112, 224);
+}
+
+.backbtn svg{
+    width: 28px;
+    height: 28px;
 }

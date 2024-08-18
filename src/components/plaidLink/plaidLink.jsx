@@ -1,10 +1,12 @@
 import { createPlaidLink, exchangePlaidToken } from "@/js/plaidLink";
+import { useRouter } from "next/navigation";
 import { useState, useCallback, useEffect } from "react";
 import { usePlaidLink } from "react-plaid-link";
 
 const PlaidLink = () =>{
     
     const [token, setToken] = useState(null);
+    const router = useRouter();
 
     useEffect(() => {
         const createLinkToken = async () => {
@@ -17,7 +19,7 @@ const PlaidLink = () =>{
 
     const onSuccess = useCallback(async(token)=>{
         await exchangePlaidToken(token);
-        console.log("successful linked")
+        router.push('/myaccount/dashboard');
     }, []);
 
     const { open, ready } = usePlaidLink({

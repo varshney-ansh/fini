@@ -36,11 +36,3 @@ export const exchangePlaidToken = async(public_token) =>{
         console.log(error);
     }
 }
-
-// export const createLinkToken = async() =>{
-//     const response = await createPlaidLink();
-//     console.log(response);
-//     const { link_token } = response.data.link_token;
-//     console.log(link_token);
-//     return link_token;
-// }

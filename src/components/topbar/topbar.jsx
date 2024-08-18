@@ -9,7 +9,7 @@ const TopBarMenu = () => {
         <div className={styles.topbar}>
             <div className={styles.rightmenu}>
                 <Link href="#">
-                    <Image src={`/profile.jpg`} width={32} height={32} />
+                    <Image src={`/profile.jpg`} alt={'finiProfileImage'} width={32} height={32} />
                     <span className={styles.pro}>
                         <span>Ansh Varshney</span>
                         <span>New York</span>
